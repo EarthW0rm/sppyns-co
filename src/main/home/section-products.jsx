@@ -1,47 +1,53 @@
 import React from 'react';
 
-export default props => (
-    <section className="section-products" id="section-products">
-        <div className="row">
-            <div className="col">
-                <div>
-                    <h2>PLATAFORMA DE FUNDOS EM CRYPTOATIVOS</h2>
-                    <hr />
-                    <p>Desenvolvemos opções de investimentos em cryptomoedas de forma segura e buscamos as melhores opções para cada perfil de investidor, sempre com transparência, informação e performance.</p>
-                </div>
-            </div>
+import { translate } from 'react-i18next';
 
-            <div className="col">
-                <div>
-                    <h2>COMPRA E VENDA DE TOKENS E MOEDAS DIGITAIS</h2>
-                    <hr />
-                    <p>Quer comprar ou vender cryptomoedas e tokens? Temos a expertise, as melhores parcerias para oferecer taxas competitivas e opções seguras para nossos clientes.</p>
+export default translate()((props) => {
+    const { t, tReady } = props;
+    return (
+        <section className="section-products" id="section-products">
+            <div className="row">
+                <div className="col">
+                    <div>
+                        <h2>{t('products.a.title')}</h2>
+                        <hr />
+                        <p>{t('products.a.p')}</p>
+                    </div>
                 </div>
-            </div>
 
-            <div className="col">
-                <div>
-                    <h2>GESTÃO DE CRYPTOMOEDAS E TOKENS</h2>
-                    <hr />
-                    <p>Conte com nossa experiência e estrutura para entender e ter uma gestão profissional de seus ativos. Aproveite a maior revolução no mundo dos investimentos até agora.</p>
+                <div className="col">
+                    <div>
+                        <h2>{t('products.b.title')}</h2>
+                        <hr />
+                        <p>{t('products.b.p')}</p>
+                    </div>
                 </div>
-            </div>
 
-            <div className="col">
-                <div>
-                    <h2>CONSULTORIA EM INVESTIMENTOS</h2>
-                    <hr />
-                    <p>Quer receber e pagar em Bitcoins e outros ativos digitais e fazer parte desta revolução tecnológica? Conte com a nossa consultoria para entender como é barato, eficiente e seguro receber em cryptomoedas</p>
+                <div className="col">
+                    <div>
+                        <h2>{t('products.c.title')}</h2>
+                        <hr />
+                        <p>{t('products.c.p')}</p>
+                    </div>
                 </div>
-            </div>
 
-            <div className="col">
-                <div>
-                    <h2>ICOs INITIAL COIN OFFERINGS</h2>
-                    <hr />
-                    <p>Temos o conhecimento e as plataformas para apoiar você no caminho de levar seu negócio a esta nova era de oportunidades, de forma segura e ética.</p>
+                <div className="col">
+                    <div>
+                        <h2>{t('products.d.title')}</h2>
+                        <hr />
+                        <p>{t('products.d.p')}</p>
+                    </div>
                 </div>
+
+                <div className="col">
+                    <div>
+                        <h2>{t('products.e.title')}</h2>
+                        <hr />
+                        <p>{t('products.e.p')}</p>
+                    </div>
+                </div>
+
             </div>
-        </div>
-    </section>
-)
+        </section>
+    )
+})
