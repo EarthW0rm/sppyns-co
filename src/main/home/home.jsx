@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import SectionJumbotron from './section-jumbotron';
 import SectionContact from './section-contact';

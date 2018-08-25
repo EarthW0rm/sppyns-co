@@ -60,8 +60,6 @@ export default props => (
                             <button type="button" className="btn btn-primary">Enviar</button>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>

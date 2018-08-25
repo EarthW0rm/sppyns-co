@@ -2,7 +2,7 @@ import React from 'react';
 
 export default props => (
     <section className="section-team" id="section-why">
-        <div className="container-fluid">
+        <div>
             <div className="row">
                 <div className="col">
                     <div className="jumbotron">
