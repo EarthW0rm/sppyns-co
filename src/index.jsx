@@ -1,6 +1,6 @@
-import 'bootstrap/dist/js/bootstrap';
-import 'font-awesome/css/font-awesome.min.css';
+//import 'bootstrap/dist/js/bootstrap';
 import './sass/main';
+import 'font-awesome/css/font-awesome.min.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
