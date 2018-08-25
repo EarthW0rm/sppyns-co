@@ -92,7 +92,7 @@ module.exports = function(env) {
             , new FaviconsWebpackPlugin('./src/images/_company_icon.png')
             , new HtmlWebPackPlugin({
                 template: "./src/index.html",
-                favicon: 'src/AWESOM-O.ico',
+                favicon: 'src/images/_company_icon.png',
                 filename: "./index.html"
             })
             ,new webpack.ProvidePlugin({
