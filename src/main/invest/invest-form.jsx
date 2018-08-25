@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, ButtonGroup } from 'reactstrap';
-export default class InvestForm extends Component {
+import { translate } from 'react-i18next';
+class InvestForm extends Component {
 
     constructor(props){
         super(props);
@@ -8,47 +9,48 @@ export default class InvestForm extends Component {
     }
 
     render() {
+        const { t, tReady } = this.props;
         return (
             <div className="invest-form">
                 <div className="form">
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Email*" />
+                        <input type="text" className="form-control" placeholder={t('form.email')} />
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Nome*" />
+                        <input type="text" className="form-control" placeholder={t('form.nome')} />
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Telefone" />
+                        <input type="text" className="form-control" placeholder={t('form.telefone')} />
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Cpf" />
+                        <input type="text" className="form-control" placeholder={t('form.documento')} />
                     </div>
                     <div className="form-group">
                         <ButtonGroup>
-                            <Button color="primary" onClick={() => this.setState({...this.state, selectedQuota: 1})} active={this.state.selectedQuota === 1}>Quotes - 1</Button>
-                            <Button color="primary" onClick={() => this.setState({...this.state, selectedQuota: 2})} active={this.state.selectedQuota === 2}>Quotes - 2</Button>
-                            <Button color="primary" onClick={() => this.setState({...this.state, selectedQuota: 3})} active={this.state.selectedQuota === 3}>Quotes - 3</Button>
-                            <Button color="primary" onClick={() => this.setState({...this.state, selectedQuota: 4})} active={this.state.selectedQuota === 4}>Quotes - 4</Button>
+                            <Button color="primary" onClick={() => this.setState({...this.state, selectedQuota: 1})} active={this.state.selectedQuota === 1}>{t('form.cota')} - 1</Button>
+                            <Button color="primary" onClick={() => this.setState({...this.state, selectedQuota: 2})} active={this.state.selectedQuota === 2}>{t('form.cota')} - 2</Button>
+                            <Button color="primary" onClick={() => this.setState({...this.state, selectedQuota: 3})} active={this.state.selectedQuota === 3}>{t('form.cota')} - 3</Button>
+                            <Button color="primary" onClick={() => this.setState({...this.state, selectedQuota: 4})} active={this.state.selectedQuota === 4}>{t('form.cota')} - 4</Button>
                         </ButtonGroup>
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Endereco*" />
+                        <input type="text" className="form-control" placeholder={t('form.endereco')} />
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Complemento*" />
+                        <input type="text" className="form-control" placeholder={t('form.complemento')} />
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Cidade" />
+                        <input type="text" className="form-control" placeholder={t('form.cidade')} />
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Estado" />
+                        <input type="text" className="form-control" placeholder={t('form.estado')} />
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Postal/Zip Code" />
+                        <input type="text" className="form-control" placeholder={t('form.cep')} />
                     </div>
                     <div className="form-group">
                         <select className="form-control">
-                            <option value=""> - *Country - </option>
+                            <option value="">{t('form.pais')}</option>
                             <option value="US">United States</option>
                             <option value="GB">United Kingdom</option>
                             <option value="AF">Afghanistan</option>
@@ -302,9 +304,11 @@ export default class InvestForm extends Component {
                             <option value="ZW">Zimbabwe</option>
                         </select>
                     </div>
-                    <button type="button" className="btn btn-primary">Enviar</button>
+                    <button type="button" className="btn btn-primary">{t('form.botao')}</button>
                 </div>
             </div>
         );
     }
 }
+
+export default translate()(InvestForm);

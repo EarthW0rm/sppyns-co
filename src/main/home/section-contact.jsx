@@ -49,18 +49,18 @@ export default translate()((props) => {
                         <div className="row">
                             <div className="form">
                                 <div className="form-group">
-                                    <input type="text" className="form-control" placeholder={t('home.section.contact.form.email')} />
+                                    <input type="text" className="form-control" placeholder={t('form.email')} />
                                 </div>
                                 <div className="form-group">
-                                    <input type="text" className="form-control" placeholder={t('home.section.contact.form.nome')} />
+                                    <input type="text" className="form-control" placeholder={t('form.nome')} />
                                 </div>
                                 <div className="form-group">
-                                    <input type="text" className="form-control" placeholder={t('home.section.contact.form.assunto')} />
+                                    <input type="text" className="form-control" placeholder={t('form.assunto')} />
                                 </div>
                                 <div className="form-group">
-                                    <input type="text" className="form-control" placeholder={t('home.section.contact.form.mensagen')} />
+                                    <input type="text" className="form-control" placeholder={t('form.mensagen')} />
                                 </div>
-                                <button type="button" className="btn btn-primary">{t('home.section.contact.form.botao')}</button>
+                                <button type="button" className="btn btn-primary">{t('form.botao')}</button>
                             </div>
                         </div>
                     </div>
