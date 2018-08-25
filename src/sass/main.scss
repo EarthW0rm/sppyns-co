@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400');
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/bootstrap-reboot";
+// @import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/media";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/print";
+@import "~bootstrap/scss/bootstrap-grid";
+
+
+$main-bkg-color: #1D3C57;
+
+%main-font-config {
+    font-family:'Open Sans' ,Arial, Helvetica, sans-serif;
+}
+
+body {
+
+    background-color: white;
+    
+    div#app{
+        @extend %main-font-config;
+        margin: 0px;
+        padding: 0px;
+
+        & > div > .container-fluid {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .navbar {
+            font-size: 14px;
+            background-color: $main-bkg-color;
+            margin-bottom: 0px;
+            padding-top: 20px;
+            padding-bottom: 15px;
+
+            .middle-nav {                
+            
+                width: auto;
+                margin: 0px auto;
+                
+                .nav-item {
+                    font-family: Oswald;
+                    font-weight: 200;
+                    font-size: 17px;
+                    a {
+                        color: white;
+                    }
+                }
+            }
+
+            .nav-item {
+                font-family: Oswald;
+                font-weight: 200;
+                font-size: 17px;
+                a {
+                    color: white;
+                }
+            }
+
+            .navbar-header {
+
+                & .navbar-brand {
+                    @extend %main-font-config;
+                    color: white;
+                    font-size: 30px;
+                    font-weight: 600;
+                    
+                    & .fa{
+                        margin-right: 15px;
+                    }
+                }
+
+            }
+
+            & ul.nav{
+                padding-left: 50px;
+
+                & > li {                    
+                    margin-right: 10px;
+                    font-size: 20px;
+                    font-weight: bolder;
+    
+                    a {
+                        @extend %main-font-config;
+                        text-decoration: none;
+                        color: white;
+                        margin-right: 30px;
+                    }
+                }
+            }
+        }
+
+        .section-jumbo {
+            &--title {
+                font-family: Raleway;
+                font-weight: 400;
+                font-size: 124px;
+            }
+
+        }
+
+        .about {
+
+            & .thumbnail{
+
+                img {
+                    width: 100%;
+                }
+
+            }
+
+        }
+        
+        .todo {
+
+            .todo-list {
+                margin-top: 30px;
+
+            }
+
+        }
+
+    }
+}
