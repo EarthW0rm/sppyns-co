@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
-import placeHolder from '../images/_company_logo.png'
+import placeHolder from '../images/_company_logo.png';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
 export default props => (
     <nav className="navbar navbar-expand-lg navbar-dark navbar-custom">
         <div className="container">
@@ -16,16 +18,16 @@ export default props => (
                         <a className="nav-link" href="#">Home</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">O que fazemos</a>
+                        <AnchorLink className="nav-link" href="#section-products">O que fazemos</AnchorLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Quem somos</a>
+                        <AnchorLink className="nav-link" href="#section-team">Quem somos</AnchorLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Por que a Sppyns?</a>
+                        <AnchorLink className="nav-link" href="#section-why">Por que a Sppyns?</AnchorLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Contato</a>
+                        <AnchorLink className="nav-link" href="#section-contact" offset='0' >Contato</AnchorLink>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="#">Invista</a>
