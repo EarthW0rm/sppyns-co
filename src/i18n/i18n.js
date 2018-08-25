@@ -13,6 +13,103 @@ i18n
                     , 'home.section.jumbo.secondP': 'Do you want to invest in this market, but you think all this is just for Geeks and Nerds? Keep calm! Sppyns is your starting point and we will take you on this path!'                    
                     , 'home.link.signup': 'https://login.microsoftonline.com/isppyns.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1_Customer1_SigUp&client_id=27cb68f8-28cd-4dee-a5de-7645afeba0df&nonce=defaultNonce&redirect_uri=https%3A%2F%2Fwww.sppyns.co&scope=openid&response_type=id_token&prompt=login&ui_locales=en-US'
                     , 'home.link.login': 'https://login.microsoftonline.com/isppyns.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1_Customer1_SigUpOrSigIn&client_id=27cb68f8-28cd-4dee-a5de-7645afeba0df&nonce=defaultNonce&redirect_uri=https%3A%2F%2Fwww.sppyns.co&scope=openid&response_type=id_token&prompt=login&ui_locales=en-US'
+
+                    , 'home.section.contact.fale': 'GOOD TO TALK'
+                    , 'home.section.contact.endereco': 'Address:'
+                    , 'home.section.contact.endereco.valor': 'Tartu maakond, Tartu linn Riia tn 128, 50411, Estônia'
+                    , 'home.section.contact.email': 'E-mail:'
+                    , 'home.section.contact.email.valor': 'atendimento@sppyns.co'
+                    , 'home.section.contact.tel': 'Phone Number:'
+                    , 'home.section.contact.tel.valor': '+55 11 9 8339-8994'
+
+                    
+
+                    , 'form.email': 'Email'
+                    , 'form.nome': 'Name'
+                    , 'form.assunto': 'Subject'
+                    , 'form.mensagen': 'Message'
+                    , 'form.botao': 'Send'
+                    , 'form.telefone': 'Phone Number'
+                    , 'form.documento': 'Passport'
+                    , 'form.cota': 'Quotes'
+                    , 'form.endereco': 'Address'
+                    , 'form.complemento': 'Address'
+                    , 'form.cidade': 'City'
+                    , 'form.estado': 'State'
+                    , 'form.cep': 'Zip Code'
+                    , 'form.pais': 'Country'
+
+                    , 'history.one.title': 'OUR HISTORY'
+                    , 'history.one.p1': 'Sppyns was born in November of 2017, result of the will and the innovative spirit of four entrepreneurs from a disruptive idea of our CEO, Gabriel Moreira.'
+                    , 'history.one.p2': 'We have worked for months together designing each product, every business process, every new way to offer the best services to you, our customer and investor.'
+
+                    , 'history.two.title': 'WHO WE ARE'
+                    , 'history.two.p1': 'An agile company that seeks every day the best crypto-coin investment options and works to make this new form of assets accessible to all investor profiles.'
+                    , 'history.two.p2': 'We seek to present these new investment options, and also to educate in this new world those who look for good opportunities to monetize their assets.'
+
+                    , 'history.three.title': 'OUR VISION'
+                    , 'history.three.p1': 'Our horizon has no borders and we operate in the main crypto-coin markets in the world, seeking opportunities and operational efficiency.'
+
+                    , 'products.a.title': 'CRYPTOATIVE FUNDS PLATFORM'
+                    , 'products.a.p': 'We develop options for investing in crypto-coins in a safe way and we look for the best options for each investor profile, always with transparency, information and performance.'
+
+                    , 'products.b.title': 'PURCHASE AND SALE OF TOKENS AND DIGITAL COINS'
+                    , 'products.b.p': 'Do you want to buy or sell crypto-coins and tokens? We have the expertise, the best partnerships to offer competitive rates and safe options for our customers.'
+
+                    , 'products.c.title': 'MANAGEMENT OF CRYPTO-COINS AND TOKENS'
+                    , 'products.c.p': 'Count on our experience and structure to understand and have a professional management of your assets. Take advantage of the biggest revolution in the investment world so far.'
+
+                    , 'products.d.title': 'INVESTMENT CONSULTANCY'
+                    , 'products.d.p': 'Do you want to receive and pay in Bitcoins and other digital assets and be part of this technological revolution? Count on our consulting firm to understand how cheap, efficient and secure it is to receive in crypto-coins.'
+
+                    , 'products.e.title': 'ICOs INITIAL COIN OFFERINGS'
+                    , 'products.e.p': 'We have the knowledge and the platforms to support you safely and ethically on the path of taking your business to this new era of opportunities.'
+
+
+                    , 'team.title': 'OUR TEAM'
+                    
+                    , 'team.people.a.name': 'Rodrigo Csizmar Borges'
+                    , 'team.people.a.cargo': 'COO e Founder'
+                    , 'team.people.a.press': 'Business Developer, IT Sales Executive, Blockchain, Cryptocurrencies e Innovation'
+
+                    , 'team.people.b.name': 'Gabriel Moreira'
+                    , 'team.people.b.cargo': 'CEO e Founder'
+                    , 'team.people.b.press': 'IT Sales Expert, Empreendedor, Entusiasta das Cryptocurrencies e Blockchain'
+
+                    , 'team.people.c.name': 'Lucas Cabral'
+                    , 'team.people.c.cargo': 'CTO e Founder'
+                    , 'team.people.c.press': 'Hardware Jedi, Entusiasta de Blockchain e Technical Trust'
+
+                    , 'team.people.d.name': 'Leonardo Faviere'
+                    , 'team.people.d.cargo': 'Expansion e Founder'
+                    , 'team.people.d.press': 'Senior Investment Advisor e Empreendedor'
+
+
+                    , 'invest.jumbo.title': 'MAKE YOURSELF A'
+                    , 'invest.jumbo.subtitle': 'SPPYNER'
+                    , 'invest.jumbo.p': 'Invest in SPPYNS and be part of the world of opportunities that only crypto-coins investments can provide. If you are interested in developing a partnership with us and being an investor, fill out the form.'
+
+                    , 'section.why.title': 'WHY'
+                    , 'section.why.subtitle': 'US?'
+                    , 'section.why.jumbo.p': 'The Crypto-coins and all the opportunities they bring have come to stay, but as it is still a space dominated by technology enthusiasts, most Geeks, our challenge is to demystify this and show that with good information and good advice everyone can look for new opportunities and options of investment gains.'
+
+
+                    , 'section.why.top.title': 'EXPERTISE'
+                    , 'section.why.top.p1': 'We have created Sppyns because we believe that beyond Technology, people are our most important asset.'
+                    , 'section.why.top.p2': 'Therefore, we surround ourselves with professionals from various areas of activity, who have different and complementary experiences, and with the same passion to create something new and surprising.'
+
+                    , 'section.why.bot.title': 'INNOVATION'
+                    , 'section.why.bot.p1': 'In this market, anticipating trends and being prepared for quick movements is essential.'
+                    , 'section.why.bot.p2': 'For this, we seek people and partners with the experience, knowledge and a great desire to do more for our customers.'
+                    , 'section.why.bot.p3': 'We focus on the most innovative technologies and processes to always have the best options of services and consulting in cryptoinvestments.'
+
+
+                    , 'header.menu.home': 'Home'
+                    , 'header.menu.oque': 'What we do'
+                    , 'header.menu.quem': 'Who we are'
+                    , 'header.menu.porque': 'Why Sppyns?'
+                    , 'header.menu.contato': 'Contact'
+                    , 'header.menu.invista': 'Invest'
                 }
             },
             "fr-FR": {
