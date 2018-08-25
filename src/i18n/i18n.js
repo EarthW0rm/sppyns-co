@@ -68,6 +68,16 @@ i18n
                     , 'products.e.title': 'ICOs INITIAL COIN OFFERINGS'
                     , 'products.e.p': 'Temos o conhecimento e as plataformas para apoiar você no caminho de levar seu negócio a esta nova era de oportunidades, de forma segura e ética.'
 
+                    , 'invest.jumbo.title': 'SEJA TAMBÉM UM'
+                    , 'invest.jumbo.subtitle': 'SPPYNER'
+                    , 'invest.jumbo.p': 'Invista na SPPYNS e faça parte do mundo de oportunidades que só investimentos em cryptomoedas podem proporcionar. Caso tenha interesse em evoluir sua parceria conosco e ser um investidor, preencha o formulário.'
+
+                    , 'header.menu.home': 'Home'
+                    , 'header.menu.oque': 'O que fazemos'
+                    , 'header.menu.quem': 'Quem somos'
+                    , 'header.menu.porque': 'Por que a Sppyns?'
+                    , 'header.menu.contato': 'Contato'
+                    , 'header.menu.invista': 'Invista'
                 }
             }
         },

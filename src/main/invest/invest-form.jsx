@@ -23,13 +23,12 @@ export default class InvestForm extends Component {
                     <div className="form-group">
                         <input type="text" className="form-control" placeholder="Cpf" />
                     </div>
-                    <div>
-                        <label>Quotes</label>
+                    <div className="form-group">
                         <ButtonGroup>
-                            <Button color="primary" onClick={() => this.setState({...this.state, selectedQuota: 1})} active={this.state.selectedQuota === 1}>1</Button>
-                            <Button color="primary" onClick={() => this.setState({...this.state, selectedQuota: 2})} active={this.state.selectedQuota === 2}>2</Button>
-                            <Button color="primary" onClick={() => this.setState({...this.state, selectedQuota: 3})} active={this.state.selectedQuota === 3}>3</Button>
-                            <Button color="primary" onClick={() => this.setState({...this.state, selectedQuota: 3})} active={this.state.selectedQuota === 3}>4</Button>
+                            <Button color="primary" onClick={() => this.setState({...this.state, selectedQuota: 1})} active={this.state.selectedQuota === 1}>Quotes - 1</Button>
+                            <Button color="primary" onClick={() => this.setState({...this.state, selectedQuota: 2})} active={this.state.selectedQuota === 2}>Quotes - 2</Button>
+                            <Button color="primary" onClick={() => this.setState({...this.state, selectedQuota: 3})} active={this.state.selectedQuota === 3}>Quotes - 3</Button>
+                            <Button color="primary" onClick={() => this.setState({...this.state, selectedQuota: 4})} active={this.state.selectedQuota === 4}>Quotes - 4</Button>
                         </ButtonGroup>
                     </div>
                     <div className="form-group">
