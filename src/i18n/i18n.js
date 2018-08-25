@@ -23,6 +23,103 @@ i18n
                     , 'home.section.jumbo.secondP': 'Vous voulez investir dans ce marché, mais vous pensez que tout cela est juste pour Geeks et Nerds? Vous pouvez vous rester facilement! Sppyns est votre point de départ et nous vous emmènerons sur ce chemin!'
                     , 'home.link.signup': 'https://login.microsoftonline.com/isppyns.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1_Customer1_SigUp&client_id=27cb68f8-28cd-4dee-a5de-7645afeba0df&nonce=defaultNonce&redirect_uri=https%3A%2F%2Fwww.sppyns.co&scope=openid&response_type=id_token&prompt=login&ui_locales=fr-FR'
                     , 'home.link.login': 'https://login.microsoftonline.com/isppyns.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1_Customer1_SigUpOrSigIn&client_id=27cb68f8-28cd-4dee-a5de-7645afeba0df&nonce=defaultNonce&redirect_uri=https%3A%2F%2Fwww.sppyns.co&scope=openid&response_type=id_token&prompt=login&ui_locales=fr-FR'
+
+
+                    , 'home.section.contact.fale': 'Parler aux gens'
+                    , 'home.section.contact.endereco': 'Adresse de rue:'
+                    , 'home.section.contact.endereco.valor': 'Tartu maakond, Tartu linn Riia tn 128, 50411, Estônia'
+                    , 'home.section.contact.email': 'Votre adresse e-mail:'
+                    , 'home.section.contact.email.valor': 'atendimento@sppyns.co'
+                    , 'home.section.contact.tel': 'Téléphone:'
+                    , 'home.section.contact.tel.valor': '+55 11 9 8339-8994'
+
+                    
+
+                    , 'form.email': 'Votre adresse e-mail'
+                    , 'form.nome': 'Nom'
+                    , 'form.assunto': 'Sujet'
+                    , 'form.mensagen': 'message'
+                    , 'form.botao': 'Envoyer'
+                    , 'form.telefone': 'Téléphone'
+                    , 'form.documento': 'Passaport'
+                    , 'form.cota': 'Les quotas'
+                    , 'form.endereco': 'Adresse de rue'
+                    , 'form.complemento': 'Complément'
+                    , 'form.cidade': 'Ville'
+                    , 'form.estado': 'État'
+                    , 'form.cep': 'Postal'
+                    , 'form.pais': 'Pays'
+
+                    , 'history.one.title': 'NOTRE HISTOIRE'
+                    , 'history.one.p1': 'Sppyns est née en novembre 2017, fruit de la volonté et de l`esprit d`innovation de quatre entrepreneurs à partir d`une idée dérangeante de notre président-directeur general (PDG), Gabriel Moreira.'
+                    , 'history.one.p2': 'Nous travaillons ensemble pendant des mois à concevoir chaque produit, chaque processus d`affaires, chaque nouvelle façon d`offrir les meilleurs services à vous, à nos clients et à nos investisseurs.'
+
+                    , 'history.two.title': 'À PROPOS DE NOUS'
+                    , 'history.two.p1': 'Une société agile qui recherche chaque jour les meilleures options d`investissement dans des crypto-pièces, et travaille à rendre cette nouvelle forme d`actifs accessible à tous les profils d`investisseurs.'
+                    , 'history.two.p2': 'Nous cherchons à présenter ces nouvelles options d`nvestissement, et aussi à éduquer dans ce nouveau monde ceux qui cherchent de bonnes opportunités pour monétiser leurs actifs.'
+
+                    , 'history.three.title': 'NOTRE VISION'
+                    , 'history.three.p1': 'Notre horizon n`a pas de frontières et nous opérons dans les principaux marchés de crypto-pièces du monde, à la recherche d`opportunités et d`efficacité opérationnelle.'
+
+                    , 'products.a.title': 'PLATEFORME DE FONDS CRYPTOATIVES'
+                    , 'products.a.p': 'Nous développons des options pour investir dans des crypto-pièces de manière sûre et nous recherchons les meilleures options pour chaque profil d`investisseur, toujours avec la transparence, l`information et la performance.'
+
+                    , 'products.b.title': 'ACHAT ET VENTE DE JETONS ET PIÈCES NUMÉRIQUES'
+                    , 'products.b.p': 'Vous voulez acheter ou vendre des crypto-pièces et des jetons? Nous avons l`expertise, les meilleurs partenariats pour offrir des tarifs compétitifs et des options sécuritaires pour nos clients.'
+
+                    , 'products.c.title': 'GESTION DES CRYPTO-PIÈCES ET DES JETONS'
+                    , 'products.c.p': 'Vous pouvez compter sur notre expérience et notre structure pour comprendre et avoir une gestion professionnelle de vos actifs. Profitez de la plus grande révolution dans le monde de l`investissement jusqu`à présent.'
+
+                    , 'products.d.title': 'CONSEIL EN PLACEMENT'
+                    , 'products.d.p': 'Voulez-vous recevoir et payer en Bitcoins et autres actifs numériques et faire partie de cette révolution technologique? Comptez sur notre cabinet de conseil pour comprendre comme il est un bon marché, efficace et sécurisé de recevoir des cryptomoedas.'
+
+                    , 'products.e.title': 'ACI OFFRES DE PIÈCES INITIALES'
+                    , 'products.e.p': 'Nous avons les connaissances et les plates-formes pour vous accompagner sur la voie de mener votre entreprise à cette nouvelle ère d`opportunités, de manière sûre et éthique.'
+
+
+                    , 'team.title': 'NOTRE ÉQUIPE'
+                    
+                    , 'team.people.a.name': 'Rodrigo Csizmar Borges'
+                    , 'team.people.a.cargo': 'COO e Founder'
+                    , 'team.people.a.press': 'Business Developer, IT Sales Executive, Blockchain, Cryptocurrencies e Innovation'
+
+                    , 'team.people.b.name': 'Gabriel Moreira'
+                    , 'team.people.b.cargo': 'CEO e Founder'
+                    , 'team.people.b.press': 'IT Sales Expert, Empreendedor, Entusiasta das Cryptocurrencies e Blockchain'
+
+                    , 'team.people.c.name': 'Lucas Cabral'
+                    , 'team.people.c.cargo': 'CTO e Founder'
+                    , 'team.people.c.press': 'Hardware Jedi, Entusiasta de Blockchain e Technical Trust'
+
+                    , 'team.people.d.name': 'Leonardo Faviere'
+                    , 'team.people.d.cargo': 'Expansion e Founder'
+                    , 'team.people.d.press': 'Senior Investment Advisor e Empreendedor'                    
+
+                    , 'section.why.title': 'POURQUOI'
+                    , 'section.why.subtitle': 'SPPYNS?'
+                    , 'section.why.jumbo.p': 'Les Cryptomoedas et toutes les opportunités qu`ils apportent sont là pour rester, mais depuis c`est toujours un espace dominé par les passionnés de technologie, la plupart des Geeks, notre défi est de démystifier cela et montrer qu`avec de bonnes informations et de bons conseils tout le monde peut chercher de nouvelles opportunités des gains et des options d`investissement.'
+
+
+                    , 'section.why.top.title': 'EXPERTISE'
+                    , 'section.why.top.p1': 'Nous avons créé Sppyns parce que nous croyons qu`au-delà de la technologie, les gens sont notre atout le plus important.'
+                    , 'section.why.top.p2': 'Par conséquent, nous nous entourons de professionnels de différents domaines d`activité, qui ont des expériences différentes et complémentaires, et avec la même passion pour créer quelque chose de nouveau et surprenant.'
+
+                    , 'section.why.bot.title': 'INNOVATION'
+                    , 'section.why.bot.p1': 'Sur ce marché, anticiper les tendances et se préparer à des mouvements rapides est essentiel.'
+                    , 'section.why.bot.p2': 'Pour cela, nous recherchons des personnes et des partenaires avec l`expérience, les connaissances et un grand désir d`en faire plus pour nos clients.'
+                    , 'section.why.bot.p3': 'Nous nous concentrons sur les technologies et les processus les plus innovants pour toujours avoir les meilleures options de services et de conseil en cryptoinvestments.'
+
+                    , 'invest.jumbo.title': 'SOYEZ UN'
+                    , 'invest.jumbo.subtitle': 'SPPYNER'
+                    , 'invest.jumbo.p': 'Investissez dans SPPYNS et faites partie du monde des opportunités que seuls les investissements en crypto-pièces peut fournir. Si vous souhaitez développer votre partenariat avec nous et être un investisseur, remplissez le formulaire.'
+
+                    , 'header.menu.home': 'Accueil'
+                    , 'header.menu.oque': 'Ce que nous faisons'
+                    , 'header.menu.quem': 'À propos de nous'
+                    , 'header.menu.porque': 'Pourquoi Sppyns?'
+                    , 'header.menu.contato': 'Contactez nous'
+                    , 'header.menu.invista': 'Investissez'
+
                 }
             },
             "pt-BR": {
