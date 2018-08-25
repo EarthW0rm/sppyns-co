@@ -4,7 +4,7 @@ import InvestForm from './invest-form'
 import InvestJumbotron from './invest-jumbotron'
 
 export default props => (
-    <div className="container-fluid">
+    <div className="container-fluid" id="section-invest">
         <div className="row">
             <div className="col">
                 <InvestJumbotron />

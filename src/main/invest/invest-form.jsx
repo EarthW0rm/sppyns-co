@@ -48,7 +48,7 @@ export default class InvestForm extends Component {
                         <input type="text" className="form-control" placeholder="Postal/Zip Code" />
                     </div>
                     <div className="form-group">
-                        <select class="form-control">
+                        <select className="form-control">
                             <option value=""> - *Country - </option>
                             <option value="US">United States</option>
                             <option value="GB">United Kingdom</option>
