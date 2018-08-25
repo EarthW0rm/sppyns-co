@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import placeHolder from '../images/wonsp.png'
+import placeHolder from '../images/_company_logo.png'
 export default props => (
     <nav className="navbar navbar-expand-lg navbar-dark navbar-custom">
         <div className="container">

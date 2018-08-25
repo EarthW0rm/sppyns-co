@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = function(env) {
 
@@ -84,7 +85,7 @@ module.exports = function(env) {
                 filename: 'app.css'
                 , allChunks: true
             })
-            //, new FaviconsWebpackPlugin('favicon.png')
+            , new FaviconsWebpackPlugin('./src/images/_company_icon.png')
             , new HtmlWebPackPlugin({
                 template: "./src/index.html",
                 favicon: 'src/AWESOM-O.ico',
