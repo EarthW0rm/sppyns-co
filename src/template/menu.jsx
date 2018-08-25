@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import placeHolder from '../images/_company_logo.png';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import i18n from 'i18next';
 
 export default props => (
     <nav className="navbar navbar-expand-lg navbar-dark navbar-custom">
@@ -30,18 +31,18 @@ export default props => (
                         <AnchorLink className="nav-link" href="#section-contact" offset='0' >Contato</AnchorLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Invista</a>
+                        <AnchorLink className="nav-link" href="#section-invest">Invista</AnchorLink>
                     </li>
                 </ul>
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                        <a className="nav-link" href="#">PT</a>
+                        <a className="nav-link" onClick={() => {i18n.changeLanguage("pt-BR")} }>PT</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">EN</a>
+                        <a className="nav-link" onClick={() => {i18n.changeLanguage("en-US")} }>EN</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">FR</a>
+                        <a className="nav-link" onClick={() => {i18n.changeLanguage("fr-FR")} }>FR</a>
                     </li>
                 </ul>
             </div>

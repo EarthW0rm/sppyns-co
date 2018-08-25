@@ -89,7 +89,7 @@ module.exports = function(env) {
                 filename: 'app.css'
                 , allChunks: true
             })
-            , new FaviconsWebpackPlugin('./src/images/_company_icon.png')
+            , new FaviconsWebpackPlugin('./src/images/_company-icon.png')
             , new HtmlWebPackPlugin({
                 template: "./src/index.html",
                 favicon: 'src/images/_company-icon.png',
