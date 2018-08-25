@@ -24,14 +24,18 @@ module.exports = function(env) {
         , module: {
             rules: [
                 {
-                    test: /\.js[x]$/
+                    test: /\.(jsx|js)$/
                     , exclude: /(node_modules|bower_components)/
                     , use: [
                         {
                             loader: 'babel-loader'
                             , options: {
-                                presets: ['es2015', 'react']
-                                , plugins: ['transform-object-rest-spread']
+                                presets: [ ['@babel/preset-env', {
+                                    "targets": {
+                                       "browsers": ["last 2 versions", "ie >= 11"]
+                                    }
+                                 }], '@babel/preset-react']
+                                , plugins: [require('@babel/plugin-proposal-object-rest-spread')]
                             }
                         }
                     ]
