@@ -68,9 +68,44 @@ i18n
                     , 'products.e.title': 'ICOs INITIAL COIN OFFERINGS'
                     , 'products.e.p': 'Temos o conhecimento e as plataformas para apoiar você no caminho de levar seu negócio a esta nova era de oportunidades, de forma segura e ética.'
 
+
+                    , 'team.title': 'Nosso Time'
+                    
+                    , 'team.people.a.name': 'Rodrigo Csizmar Borges'
+                    , 'team.people.a.cargo': 'COO e Founder'
+                    , 'team.people.a.press': 'Business Developer, IT Sales Executive, Blockchain, Cryptocurrencies e Innovation'
+
+                    , 'team.people.b.name': 'Gabriel Moreira'
+                    , 'team.people.b.cargo': 'CEO e Founder'
+                    , 'team.people.b.press': 'IT Sales Expert, Empreendedor, Entusiasta das Cryptocurrencies e Blockchain'
+
+                    , 'team.people.c.name': 'Lucas Cabral'
+                    , 'team.people.c.cargo': 'CTO e Founder'
+                    , 'team.people.c.press': 'Hardware Jedi, Entusiasta de Blockchain e Technical Trust'
+
+                    , 'team.people.d.name': 'Leonardo Faviere'
+                    , 'team.people.d.cargo': 'Expansion e Founder'
+                    , 'team.people.d.press': 'Senior Investment Advisor e Empreendedor'
+
+
                     , 'invest.jumbo.title': 'SEJA TAMBÉM UM'
                     , 'invest.jumbo.subtitle': 'SPPYNER'
                     , 'invest.jumbo.p': 'Invista na SPPYNS e faça parte do mundo de oportunidades que só investimentos em cryptomoedas podem proporcionar. Caso tenha interesse em evoluir sua parceria conosco e ser um investidor, preencha o formulário.'
+
+                    , 'section.why.title': 'POR QUE A'
+                    , 'section.why.subtitle': 'SPPYNS?'
+                    , 'section.why.jumbo.p': 'As Cryptomoedas e todas as oportunidades que elas trazem vieram para ficar, mas ainda é um espaço dominado por por apaixonados por tecnologia, os Geeks em sua maioria, nosso desafio é desmistificar isto e mostrar que com boa informação e boa assessoria todos podem buscar novas oportunidades de ganhos e opções de investimentos.'
+
+
+                    , 'section.why.top.title': 'EXPERTISE'
+                    , 'section.why.top.p1': 'Criamos a Sppyns porque acreditamos que além da Tecnologia, as pessoas são nosso mais importante ativo.'
+                    , 'section.why.top.p2': 'Por isso, nos cercamos de profissionais de várias áreas de atuação, que tivessem vivências distintas, complementares e com a mesma paixão por criar algo novo e surpreendente.'
+
+                    , 'section.why.bot.title': 'INOVAÇÃO'
+                    , 'section.why.bot.p1': 'Neste mercado, antecipar-se às tendências e estar preparado para rápidos movimentos é essencial.'
+                    , 'section.why.bot.p2': 'Para isso, buscamos pessoas e parceiros com a experiência, conhecimento e uma grande vontade de fazer sempre mais pelos nossos clientes.'
+                    , 'section.why.bot.p3': 'Buscamos as mais inovadoras tecnologias e processos para ter sempre as melhores opções de serviços e consultoria em cryptoinvestimentos.'
+
 
                     , 'header.menu.home': 'Home'
                     , 'header.menu.oque': 'O que fazemos'
@@ -78,6 +113,9 @@ i18n
                     , 'header.menu.porque': 'Por que a Sppyns?'
                     , 'header.menu.contato': 'Contato'
                     , 'header.menu.invista': 'Invista'
+
+
+
                 }
             }
         },
