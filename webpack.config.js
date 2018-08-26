@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = function(env) {
 
@@ -103,6 +104,11 @@ module.exports = function(env) {
                 'process.env': {
                     'API_URL': JSON.stringify(env.API_URL)
                 }
+            })
+            , new UglifyJSPlugin({
+                test: /\.js($|\?)/i
+                , sourceMap: false
+                , extractComments: true
             })
         ]
     }

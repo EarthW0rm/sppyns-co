@@ -136,7 +136,9 @@ body {
                 border-radius: 0px;
                 background-color: transparentize($main-bkg-color, 0.5);
                 color: white;
-                margin-bottom: 0px;                
+                margin-bottom: 0px;
+                padding-top: 90px;
+                padding-bottom: 90px;
 
                 .title-box {
                     max-width: 550px;
