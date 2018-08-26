@@ -63,6 +63,10 @@ body {
         max-width: 1900px;
         margin: 0px auto;
         background-color: $main-bkg-color;
+        
+        -webkit-box-shadow: 0px 0px 30px 17px rgba(0, 0, 0, 0.39);
+        -moz-box-shadow:    0px 0px 30px 17px rgba(0, 0, 0, 0.39);
+        box-shadow:         0px 0px 30px 17px rgba(0, 0, 0, 0.39);
 
         @extend %main-font-config;
         padding: 0px;
@@ -430,14 +434,14 @@ body {
                 text-align: center;
                 .photo {
                     img {
-                        -webkit-box-shadow: 7px 7px 22px 0px rgba(50, 50, 50, 0.75);
-                        -moz-box-shadow:    7px 7px 22px 0px rgba(50, 50, 50, 0.75);
-                        box-shadow:         7px 7px 22px 0px rgba(50, 50, 50, 0.75);
+                        -webkit-box-shadow: 0px 0px 27px 5px rgba(29, 60, 87, 0.39);
+                        -moz-box-shadow:    0px 0px 27px 5px rgba(29, 60, 87, 0.39);
+                        box-shadow:         0px 0px 27px 5px rgba(29, 60, 87, 0.39);
                         width: 160px;
                         border-radius: 15px;
                         border: 10px solid white;              
                     }
-                    
+                    margin: 30px 0px;                    
                     
                 }
 
