@@ -5,22 +5,23 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var router = express.Router();
 var app = express();
+const sgMail = require('@sendgrid/mail');
+require('dotenv').load();
 
-var SENDGRID_API_KEY='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'
-var MAIL_TO=''
-
+var SENDGRID_API_KEY= process.env.SENDGRID_API_KEY
+var MAIL_TO= process.env.MAIL_TO
+var MAIL_FROM= process.env.MAIL_FROM
 
 function sendEmail(data) {
-
-    const sgMail = require('@sendgrid/mail');
+   
     sgMail.setApiKey(SENDGRID_API_KEY);
     const msg = {
-      to: 'contact@sppyns.io',
-      from: 'contact@sppyns.io',
+      to: MAIL_TO,
+      from: MAIL_FROM,
       subject: 'Formularios site sppyns-co',
-      text: 'and easy to do anywhere, even with Node.js'
+      text: JSON.stringify(data)
     };
-    sgMail.send(msg);
+    return sgMail.send(msg);
 
 
 }
@@ -35,6 +36,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 router.get('/', function (req, res) {
     res.status(200).render(path.join(__dirname, 'public', '/index.html'));
 });
+
+router.post('/sendEmail', function (req, res) {
+
+    sendEmail(req.body).then((data) => {
+        console.log(data);
+        res.status(200).send({status: 'success'})
+    })
+
+    
+
+} )
 
 
 app.use('/', router);

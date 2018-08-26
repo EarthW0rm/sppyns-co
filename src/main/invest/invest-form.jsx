@@ -22,7 +22,29 @@ class InvestForm extends Component {
     }
 
     SendForm() {
-        window.alert(JSON.stringify(this.state))
+        var data = {...this.state}
+        data.Formualario = 'CONTATO'
+
+        axios.post('/sendEmail', data)
+          .then(function (response) {
+            window.alert('Formulário enviado.');
+            this.setState({
+                selectedQuota: 0
+                , nome: ''
+                , email: ''
+                , telefone: ''
+                , documento: ''
+                , endereco: ''
+                , complemento: ''
+                , cidade: ''
+                , estado: ''
+                , cep: ''
+                , pais: ''
+            })
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
     }
 
     render() {

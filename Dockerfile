@@ -21,4 +21,7 @@ COPY --from=build './app-build/package.json' /app/package.json
 COPY --from=build './app-build/node.app.js' /app/node.app.js
 COPY --from=build './app-build/public' /app/public
 RUN npm install --production
+ENV SENDGRID_API_KEY=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
+ENV MAIL_TO=contact@sppyns.io
+ENV MAIL_FROM=contact@sppyns.io
 CMD ["pm2-runtime", "/app/node.app.js"]

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import PinImage from '../../images/pin.png';
 import { translate } from 'react-i18next';
+import axios from 'axios'
+
 
 const Marker = props => {
     return (<div className="SuperAwesomePin">
@@ -22,7 +24,22 @@ class SectionContact extends Component {
     }
 
     SendForm() {
-        window.alert(JSON.stringify(this.state))
+        var data = {...this.state}
+        data.Formualario = 'CONTATO'
+
+        axios.post('/sendEmail', data)
+          .then(function (response) {
+            window.alert('Formulário enviado.');
+            this.setState({
+                nome: ''
+                , email: ''
+                , assunto: ''
+                , mensagem: ''
+            })
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
     }
 
     render() {
