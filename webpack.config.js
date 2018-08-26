@@ -8,12 +8,12 @@ module.exports = function(env) {
     return {
         entry: './src/index.jsx'
         , output:{
-            path: __dirname + '/dist'
+            path: __dirname + '/public'
             , filename: './app.js'
         }
         ,devServer:{
             port: 81
-            , contentBase: './dist'
+            , contentBase: './public'
         }
         , resolve:{
             extensions: ['.js', '.jsx', '.scss', '.css', '.html', 'jpg']
