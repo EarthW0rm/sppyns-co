@@ -17,12 +17,12 @@ export default props => (
         <SectionTeam />
         <SectionInvest />
         <SectionContact />
-        <section id="section-footer">
+        <section id="section-footer" className="section-footer">
             <div className="container">
                 <div className="social">
-                    <i className="fab fa-facebook-square"></i>
-                    <i className="fab fa-twitter-square"></i>
-                    <i className="fab fa-google-plus-square"></i>
+                    <a href="#section-footer"><i className="fab fa-facebook-square"></i></a>
+                    <a href="#section-footer"><i className="fab fa-twitter-square"></i></a>
+                    <a href="#section-footer"><i className="fab fa-google-plus-square"></i></a>
                 </div>
                 <span>
                     © 2018 by SPPYNS. No Geek? No problem!

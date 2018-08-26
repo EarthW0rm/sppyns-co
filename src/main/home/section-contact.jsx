@@ -5,7 +5,7 @@ import { translate } from 'react-i18next';
 
 const Marker = props => {
     return (<div className="SuperAwesomePin">
-        <i class="fas fa-map-pin"></i>
+        <i className="fas fa-map-pin"></i>
         {/* <span>Nosso escritorio.</span> */}
     </div>)
 }
