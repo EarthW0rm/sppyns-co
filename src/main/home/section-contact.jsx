@@ -5,7 +5,8 @@ import { translate } from 'react-i18next';
 
 const Marker = props => {
     return (<div className="SuperAwesomePin">
-        <img src={PinImage} />
+        <i class="fas fa-map-pin"></i>
+        {/* <span>Nosso escritorio.</span> */}
     </div>)
 }
 
@@ -30,40 +31,38 @@ class SectionContact extends Component {
         return (
             <section className="section-contact" id="section-contact">
                 <div className="row">
-                    <div className="col">
-                        <div style={{ height: '100vh', width: '100%' }}>
-                            <GoogleMapReact
+                    <div className="col map-contact">
+                        <div style={{ height: '100%' }} className="map-place">
+                            <GoogleMapReact zoom={16}
                                 bootstrapURLKeys={{ key: 'AIzaSyDHscuvNYRXl2DITVK4QGtzcyXC709EUTk' }}
                                 defaultCenter={{
-                                    lat: 59.95,
-                                    lng: 30.33
+                                    lat: 58.360657,
+                                    lng: 26.688978
                                 }}
-                                defaultZoom={11}>
-                                <Marker lat={59.95} lng={30.33} />
+                                defaultZoom={16}>
+                                <Marker lat={58.360657} lng={26.688978} />
                             </GoogleMapReact>
                         </div>
                     </div>
-                    <div className="col">
+                    <div className="col contact-form">
                         <div>
                             <div className="row">
-                                <span>{t('home.section.contact.fale')}</span>
-                            </div>
-                            <div className="row">
-                                <div>
-                                    <span><b>{t('home.section.contact.endereco')}</b></span>
-                                    <p>{t('home.section.contact.endereco.valor')}</p>
-                                </div>
-                                <div>
-                                    <span><b>{t('home.section.contact.email')}</b></span>
-                                    <p>{t('home.section.contact.email.valor')}</p>
-                                </div>
-                                <div>
-                                    <span><b>{t('home.section.contact.tel')}</b></span>
-                                    <p>{t('home.section.contact.tel.valor')}</p>
-                                </div>
-                            </div>
-                            <div className="row">
                                 <div className="form">
+
+                                    <div className="contact-address">
+
+                                        <div className="title">
+                                            <h3>{t('home.section.contact.fale')}</h3>
+                                        </div>
+                                        <div className="address">
+                                            <label>{t('home.section.contact.endereco')}</label>
+                                            <p>{t('home.section.contact.endereco.valor')}</p>
+                                            <label>{t('home.section.contact.email')}</label>
+                                            <p>{t('home.section.contact.email.valor')}</p>
+                                            <label>{t('home.section.contact.tel')}</label>
+                                            <p>{t('home.section.contact.tel.valor')}</p>
+                                        </div>
+                                    </div>
                                     <div className="form-group">
                                         <input type="text" className="form-control" placeholder={t('form.email')} 
                                             value={ this.state.email }
@@ -80,7 +79,7 @@ class SectionContact extends Component {
                                             onChange={(event) => { this.setState({...this.state, assunto: event.target.value }) }} />
                                     </div>
                                     <div className="form-group">
-                                        <input type="text" className="form-control" placeholder={t('form.mensagen')}  
+                                        <textarea rows={4} type="text" className="form-control msg" placeholder={t('form.mensagen')}  
                                             value={ this.state.mensagem }
                                             onChange={(event) => { this.setState({...this.state, mensagem: event.target.value }) }}/>
                                     </div>

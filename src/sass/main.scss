@@ -431,6 +431,7 @@ body {
             color: $main-bkg-color;
             padding-top: 40px;
             padding-bottom: 50px;
+            margin-top: -1px;
 
             .row{
                 margin: 0px;
@@ -533,6 +534,7 @@ body {
                     border-radius: 0px;
                     margin-right: 10px;
                     margin-right: 25px;
+                    padding-right: 0px;
 
                     .title-box {
                         max-width: 475px;
@@ -600,7 +602,7 @@ body {
 
             .form-group {
 
-                input, select {
+                input, select, textarea {
                     background-color: transparent;
                     color: white;
                     font-family: Oswald;
@@ -662,5 +664,103 @@ body {
             }
         }
 
+        .section-contact {
+            background-color: #414141;
+            padding-bottom: 40px;
+
+            & > .row {
+                margin: 0px;
+            }
+
+            .map-contact{
+
+                .map-place{
+
+                    display: block;
+                    max-width: 600px;
+                    min-height: 300px;
+                    min-width: 300px;
+                    margin: 20px auto;
+                    -webkit-box-shadow: 0px 0px 30px 17px rgba(0, 0, 0, 0.39);
+                    -moz-box-shadow:    0px 0px 30px 17px rgba(0, 0, 0, 0.39);
+                    box-shadow:         0px 0px 30px 17px rgba(0, 0, 0, 0.39);
+
+                }
+
+            }
+
+            .contact-form {
+                padding-bottom: 00px;
+
+                .form {
+                    -webkit-box-shadow: 0px 0px 0 0 rgba(0, 0, 0, 0.39);
+                    -moz-box-shadow:    0px 0px 0 0 rgba(0, 0, 0, 0.39);
+                    box-shadow:         0px 0px 0 0 rgba(0, 0, 0, 0.39);
+                    background-color: transparent;
+                    vertical-align: bottom;
+                    margin-bottom: 0px;
+
+                    // .msg {
+                    //     height: 200px;
+                    // }
+                }
+
+                .contact-address{
+                    color: white;
+                    
+                    border-bottom: 1px solid white;
+                    margin-bottom: 30px;
+
+                    .address {
+                        padding: 10px 30px 10px 30px;
+                    }
+
+                    label, p {
+                        text-align: center;
+                        font-weight: 200;
+                        font-family: Oswald;
+                    }
+
+                    label {
+                        margin: 0px auto;
+                        display: block;
+                        font-weight: 400;
+                        font-size: 1.3rem;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+
+                    .title {
+                        border-bottom: 1px solid white;
+                        margin-bottom: 10px;
+                        h3 {
+                            text-align: center;
+                            font-family: Oswald;
+                            font-weight: 200;
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+
+    }
+}
+
+.SuperAwesomePin {
+    font-size: 30px;
+    color: $main-bkg-color;
+    i {
+        float: left;
+    }
+    span {
+        font-size: 15px;
+        white-space: nowrap;
+        padding-left: 10px;
     }
 }

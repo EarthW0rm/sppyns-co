@@ -17,5 +17,17 @@ export default props => (
         <SectionTeam />
         <SectionInvest />
         <SectionContact />
+        <section id="section-footer">
+            <div className="container">
+                <div className="social">
+                    <i className="fab fa-facebook-square"></i>
+                    <i className="fab fa-twitter-square"></i>
+                    <i className="fab fa-google-plus-square"></i>
+                </div>
+                <span>
+                    © 2018 by SPPYNS. No Geek? No problem!
+                </span>
+            </div>
+        </section>
     </div>
 )
