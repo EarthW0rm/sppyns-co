@@ -13,45 +13,44 @@ export default translate()((props) => {
         <section className="section-team" id="section-team">
             <div className="container">
                 <div className="row">
-                    <div>
-                        <div className="row">
-                            <h2>{t('team.title')}</h2>
+                    <h2>{t('team.title')}</h2>
+                </div>
+                <hr className="separator" />
+                        
+                <div className="row">
+                    <div className="col people">
+                        <div className="photo">
+                            <img src={ft1} />
                         </div>
-                        <div className="row">
-                            <div className="col">
-                                <div className="photo">
-                                    <img src={ft1} />
-                                </div>
-                                <h3>{t('team.people.a.name')}</h3>
-                                <span>{t('team.people.a.cargo')}</span>
-                                <p>{t('team.people.a.press')}</p>
-                            </div>
-                            <div className="col">
-                                <div className="photo">
-                                    <img src={ft2} />
-                                </div>
-                                <h3>{t('team.people.b.name')}</h3>
-                                <span>{t('team.people.b.cargo')}</span>
-                                <p>{t('team.people.b.press')}</p>
-                            </div>
-                            <div className="col">
-                                <div className="photo">
-                                    <img src={ft3} />
-                                </div>
-                                <h3>{t('team.people.c.name')}</h3>
-                                <span>{t('team.people.c.cargo')}</span>
-                                <p>{t('team.people.c.press')}</p>
-                            </div>
-                            <div className="col">
-                                <div className="photo">
-                                    <img src={ft4} />
-                                </div>
-                                <h3>{t('team.people.d.name')}</h3>
-                                <span>{t('team.people.d.cargo')}</span>
-                                <p>{t('team.people.d.press')}</p>
-                            </div>
-                        </div>
+                        <h3>{t('team.people.a.name')}</h3>
+                        <span>{t('team.people.a.cargo')}</span>
+                        <p>{t('team.people.a.press')}</p>
                     </div>
+                    <div className="col people">
+                        <div className="photo">
+                            <img src={ft2} />
+                        </div>
+                        <h3>{t('team.people.b.name')}</h3>
+                        <span>{t('team.people.b.cargo')}</span>
+                        <p>{t('team.people.b.press')}</p>
+                    </div>
+                    <div className="col people">
+                        <div className="photo">
+                            <img src={ft3} />
+                        </div>
+                        <h3>{t('team.people.c.name')}</h3>
+                        <span>{t('team.people.c.cargo')}</span>
+                        <p>{t('team.people.c.press')}</p>
+                    </div>
+                    <div className="col people">
+                        <div className="photo">
+                            <img src={ft4} />
+                        </div>
+                        <h3>{t('team.people.d.name')}</h3>
+                        <span>{t('team.people.d.cargo')}</span>
+                        <p>{t('team.people.d.press')}</p>
+                    </div>
+                    
                 </div>
             </div>
         </section>

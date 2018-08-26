@@ -419,5 +419,31 @@ body {
             }
         }
 
+        .section-team{
+            background-color: #FAFAFA;
+            & > .container-fluid{
+                max-width: 1100px;
+            }
+
+            .people {
+                text-align: center;
+                .photo {
+                    img {
+                        -webkit-box-shadow: 7px 7px 22px 0px rgba(50, 50, 50, 0.75);
+                        -moz-box-shadow:    7px 7px 22px 0px rgba(50, 50, 50, 0.75);
+                        box-shadow:         7px 7px 22px 0px rgba(50, 50, 50, 0.75);
+                        width: 160px;
+                        border-radius: 15px;
+                        border: 10px solid white;              
+                    }
+                    
+                    
+                }
+
+            }
+
+            
+        }
+
     }
 }
