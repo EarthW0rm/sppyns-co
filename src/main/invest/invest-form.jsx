@@ -51,12 +51,14 @@ class InvestForm extends Component {
                             onChange={(event) => { this.setState({ ...this.state, documento: event.target.value }) }} />
                     </div>
                     <div className="form-group">
-                        <ButtonGroup>
-                            <Button color="primary" onClick={() => this.setState({ ...this.state, selectedQuota: 1 })} active={this.state.selectedQuota === 1}>{t('form.cota')} - 1</Button>
-                            <Button color="primary" onClick={() => this.setState({ ...this.state, selectedQuota: 2 })} active={this.state.selectedQuota === 2}>{t('form.cota')} - 2</Button>
-                            <Button color="primary" onClick={() => this.setState({ ...this.state, selectedQuota: 3 })} active={this.state.selectedQuota === 3}>{t('form.cota')} - 3</Button>
-                            <Button color="primary" onClick={() => this.setState({ ...this.state, selectedQuota: 4 })} active={this.state.selectedQuota === 4}>{t('form.cota')} - 4</Button>
-                        </ButtonGroup>
+                        <select className="form-control"
+                            value={this.state.selectedQuota}
+                            onChange={(event) => { this.setState({ ...this.state, selectedQuota: event.target.value }) }}>
+                            <option value="1">{t('form.cota')} - 1</option>
+                            <option value="2">{t('form.cota')} - 2</option>
+                            <option value="3">{t('form.cota')} - 3</option>
+                            <option value="4">{t('form.cota')} - 4</option>
+                        </select>
                     </div>
                     <div className="form-group">
                         <input type="text" className="form-control" placeholder={t('form.endereco')}
@@ -341,7 +343,9 @@ class InvestForm extends Component {
                             <option value="ZW">Zimbabwe</option>
                         </select>
                     </div>
-                    <button type="button" className="btn btn-primary" onClick={() => { this.SendForm()}}>{t('form.botao')}</button>
+                    <div className="form-footer">
+                        <button type="button" className="btn btn-primary" onClick={() => { this.SendForm()}}>{t('form.botao')}</button>
+                    </div>
                 </div>
             </div>
         );

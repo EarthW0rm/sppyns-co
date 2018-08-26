@@ -6,14 +6,18 @@ export default translate()((props) => {
     const { t, tReady } = props;
     return (
         <div className="invest-jumbotron">
-            <div className="container">
-                <div className="jumbotron">
-                    <h1 className="jumbotron--title">{t('invest.jumbo.title')}</h1>
-                    <p className="jumbotron-sub-title">{t('invest.jumbo.subtitle')}</p>
+        
+            <div className="jumbotron">
+                <div className="title-box">
+                    <div className="titles">
+                        <h1 className="sub-title">{t('invest.jumbo.title')}</h1>
+                        <p className="title">{t('invest.jumbo.subtitle')}</p>
+                    </div>
                     <hr className="separator" />
                     <p>{t('invest.jumbo.p')}</p>
                 </div>
             </div>
+        
         </div>
     )
 })

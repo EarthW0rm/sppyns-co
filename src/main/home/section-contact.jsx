@@ -84,7 +84,10 @@ class SectionContact extends Component {
                                             value={ this.state.mensagem }
                                             onChange={(event) => { this.setState({...this.state, mensagem: event.target.value }) }}/>
                                     </div>
-                                    <button type="button" className="btn btn-primary" onClick={() => {this.SendForm()}}>{t('form.botao')}</button>
+                                    <div className="form-footer">
+                                        <button type="button" className="btn btn-primary" onClick={() => {this.SendForm()}}>{t('form.botao')}</button>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>

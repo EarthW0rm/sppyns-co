@@ -32,11 +32,11 @@ export default translate()((props) => {
                             <AnchorLink className="nav-link" href="#section-why">{t('header.menu.porque')}</AnchorLink>
                         </li>
                         <li className="nav-item">
-                            <AnchorLink className="nav-link" href="#section-contact" offset='0' >{t('header.menu.contato')}</AnchorLink>
-                        </li>
-                        <li className="nav-item">
                             <AnchorLink className="nav-link" href="#section-invest">{t('header.menu.invista')}</AnchorLink>
                         </li>
+                        <li className="nav-item">
+                            <AnchorLink className="nav-link" href="#section-contact" offset='0' >{t('header.menu.contato')}</AnchorLink>
+                        </li>                        
                     </ul>
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
