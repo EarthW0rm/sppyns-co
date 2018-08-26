@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,400');
 @import url('https://fonts.googleapis.com/css?family=Oswald:200,400');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,200');
 
@@ -56,14 +56,14 @@ body {
         width: 100%;
     }
 
-    background-color: lighten($main-bkg-color, 3%);
+    background-color: lighten($main-bkg-color, 4%);
     
     div#app{
         font-size: 1.064rem;
         max-width: 1900px;
         margin: 0px auto;
         background-color: $main-bkg-color;
-        
+
         @extend %main-font-config;
         padding: 0px;
 
@@ -289,18 +289,21 @@ body {
                     width: 40%;
                     min-width: 460px;
                     color: white;
+                    margin: 0px auto;
 
                     .jumbo {
                         border-radius: 0px;
                         max-width: 460px;
-                        margin: 0px auto;
-                        padding: 60px 20px 60px 20px;
+                        margin: 80px auto;
+                        padding: 60px 5px 60px 5px;
 
                         .title{
                             text-align: center;
                             font-family: Oswald;
                             font-weight: 200;
                             font-size: 6.5rem;
+                            width: 100%;
+                            text-align: center;
                             color: #BEC0C1;
                             display: inline-block;
                         }
@@ -311,13 +314,24 @@ body {
                             font-weight: 200;
                             font-size: 7.5rem;
                             color: white;
+                            width: 100%;
+                            text-align: center;
                             display: inline-block;
                             margin-top: -55px;
                         }
 
+                        hr.separator {
+                            margin-bottom: 30px;
+                            height: 2px;
+                            background-color: white;
+                            color: white;
+                        }
+
+
                         p {
                             text-align: justify;
                             font-size: 0.9rem;
+                            text-align: justify;
                         }
                     }
 
@@ -325,10 +339,84 @@ body {
 
                 .hight{
                     background-image: url('../images/_background-why.jpg');
-                    background-position-x: -200px;
+                    background-position: -180px -100px;
+                    
+                    .highlight{
+                        margin-left: 420px;
+                        width: 410px;
+                        padding: 0px;
+                        margin-top: 30px;
+                        margin-bottom: 20px;
+                        display: inline-block;
+                        font-family: Oswald;
+                        font-weight: 200;
+                        color: #999999;
+                        h2{
+                            margin-top: 50px;
+                            font-size: 2rem;
+                        }
+
+                        p {
+                            color: $main-bkg-color;
+                            font-family: sans-serif; 
+                            text-align: justify;
+                        }
+
+                    }
                 }
             }
 
+        }
+
+        .section-history {
+            background-color: white;
+            color: $main-bkg-color;
+            padding-top: 20px;
+            padding-bottom: 30px;
+
+            & > .container-fluid{
+                max-width: 1100px;
+            }
+
+            .line {
+
+                .col {
+                    min-width: 230px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+
+                h2 {
+                    font-family: Oswald;
+                    font-weight: 200;
+                    font-size: 2rem;
+                    text-align: center;
+                    min-width: 180px;
+                }
+
+                .ico {
+                    width: 100%;
+                    display: inline-block;
+                    text-align: center;
+                    font-size: 7rem;
+                }
+
+                hr {
+                    width: 130px;
+                    color: $main-bkg-color;
+                    background-color: $main-bkg-color;
+                    height: 2px;
+                    margin: 15px auto 20px auto;
+                }
+
+                p {
+                    text-align: justify;
+                    font-size: 0.9rem;
+                    font-weight: 200;
+                    padding: 0px 10px;
+                    @extend %main-font-config;
+                }
+            }
         }
 
     }
