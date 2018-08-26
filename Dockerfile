@@ -6,7 +6,6 @@ EXPOSE 3000
 FROM SystemOS AS build
 COPY './package.json' '/app-build/package.json'
 COPY './src/' '/app-build/src/'
-COPY './public/' '/app-build/public/'
 COPY './node.app.js' '/app-build/node.app.js'
 COPY './webpack.config.js' '/app-build/webpack.config.js'
 WORKDIR /app-build
