@@ -3,9 +3,26 @@ import { Button, ButtonGroup } from 'reactstrap';
 import { translate } from 'react-i18next';
 class InvestForm extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state = { selectedQuota: 0 };
+        this.state = {
+            selectedQuota: 0
+            , nome: ''
+            , email: ''
+            , telefone: ''
+            , documento: ''
+            , endereco: ''
+            , complemento: ''
+            , cidade: ''
+            , estado: ''
+            , cep: ''
+            , pais: ''
+        };
+
+    }
+
+    SendForm() {
+        window.alert(JSON.stringify(this.state))
     }
 
     render() {
@@ -14,42 +31,62 @@ class InvestForm extends Component {
             <div className="invest-form">
                 <div className="form">
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder={t('form.email')} />
+                        <input type="text" className="form-control" placeholder={t('form.email')}
+                            value={this.state.email}
+                            onChange={(event) => { this.setState({ ...this.state, email: event.target.value }) }} />
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder={t('form.nome')} />
+                        <input type="text" className="form-control" placeholder={t('form.nome')}
+                            value={this.state.nome}
+                            onChange={(event) => { this.setState({ ...this.state, nome: event.target.value }) }} />
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder={t('form.telefone')} />
+                        <input type="text" className="form-control" placeholder={t('form.telefone')}
+                            value={this.state.telefone}
+                            onChange={(event) => { this.setState({ ...this.state, telefone: event.target.value }) }} />
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder={t('form.documento')} />
+                        <input type="text" className="form-control" placeholder={t('form.documento')}
+                            value={this.state.documento}
+                            onChange={(event) => { this.setState({ ...this.state, documento: event.target.value }) }} />
                     </div>
                     <div className="form-group">
                         <ButtonGroup>
-                            <Button color="primary" onClick={() => this.setState({...this.state, selectedQuota: 1})} active={this.state.selectedQuota === 1}>{t('form.cota')} - 1</Button>
-                            <Button color="primary" onClick={() => this.setState({...this.state, selectedQuota: 2})} active={this.state.selectedQuota === 2}>{t('form.cota')} - 2</Button>
-                            <Button color="primary" onClick={() => this.setState({...this.state, selectedQuota: 3})} active={this.state.selectedQuota === 3}>{t('form.cota')} - 3</Button>
-                            <Button color="primary" onClick={() => this.setState({...this.state, selectedQuota: 4})} active={this.state.selectedQuota === 4}>{t('form.cota')} - 4</Button>
+                            <Button color="primary" onClick={() => this.setState({ ...this.state, selectedQuota: 1 })} active={this.state.selectedQuota === 1}>{t('form.cota')} - 1</Button>
+                            <Button color="primary" onClick={() => this.setState({ ...this.state, selectedQuota: 2 })} active={this.state.selectedQuota === 2}>{t('form.cota')} - 2</Button>
+                            <Button color="primary" onClick={() => this.setState({ ...this.state, selectedQuota: 3 })} active={this.state.selectedQuota === 3}>{t('form.cota')} - 3</Button>
+                            <Button color="primary" onClick={() => this.setState({ ...this.state, selectedQuota: 4 })} active={this.state.selectedQuota === 4}>{t('form.cota')} - 4</Button>
                         </ButtonGroup>
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder={t('form.endereco')} />
+                        <input type="text" className="form-control" placeholder={t('form.endereco')}
+                            value={this.state.endereco}
+                            onChange={(event) => { this.setState({ ...this.state, endereco: event.target.value }) }} />
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder={t('form.complemento')} />
+                        <input type="text" className="form-control" placeholder={t('form.complemento')}
+                            value={this.state.complemento}
+                            onChange={(event) => { this.setState({ ...this.state, complemento: event.target.value }) }} />
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder={t('form.cidade')} />
+                        <input type="text" className="form-control" placeholder={t('form.cidade')}
+                            value={this.state.cidade}
+                            onChange={(event) => { this.setState({ ...this.state, cidade: event.target.value }) }} />
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder={t('form.estado')} />
+                        <input type="text" className="form-control" placeholder={t('form.estado')}
+                            value={this.state.estado}
+                            onChange={(event) => { this.setState({ ...this.state, estado: event.target.value }) }} />
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder={t('form.cep')} />
+                        <input type="text" className="form-control" placeholder={t('form.cep')}
+                            value={this.state.cep}
+                            onChange={(event) => { this.setState({ ...this.state, cep: event.target.value }) }} />
                     </div>
                     <div className="form-group">
-                        <select className="form-control">
+                        <select className="form-control"
+                            value={this.state.pais}
+                            onChange={(event) => { this.setState({ ...this.state, pais: event.target.value }) }}>
                             <option value="">{t('form.pais')}</option>
                             <option value="US">United States</option>
                             <option value="GB">United Kingdom</option>
@@ -304,7 +341,7 @@ class InvestForm extends Component {
                             <option value="ZW">Zimbabwe</option>
                         </select>
                     </div>
-                    <button type="button" className="btn btn-primary">{t('form.botao')}</button>
+                    <button type="button" className="btn btn-primary" onClick={() => { this.SendForm()}}>{t('form.botao')}</button>
                 </div>
             </div>
         );
