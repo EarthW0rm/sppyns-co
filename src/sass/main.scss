@@ -534,11 +534,32 @@ body {
             
         }
 
+        @media (min-width: 1550px) {
+            .section-invest{
+                background-size: 100% auto;
+            }
+        }
+
+        @media (max-width: 1550px) {
+            .section-invest{
+                
+                background-size: auto 100%;
+            }
+        }
+        
         .section-invest {
-            background-image: url('../images/_backgroung-invest.png');
-            //background-size: 100%;
+            //background-image: url('../images/_backgroung-invest.png');
+            background-image: url('../images/_background-jumbotron.jpg');
             background-repeat: no-repeat;
-            padding-top:20px;
+
+            
+
+            & > .container-fluid {
+                padding-top:20px;
+                background-color: transparentize($main-bkg-color, 0.5);
+                
+                
+            }
 
             .invest-jumbotron {
 
@@ -624,7 +645,7 @@ body {
                     color: white;
                     font-family: Oswald;
                     font-weight: 200;
-                    border: 0px 0px 1px 0px solid white;
+                    border-bottom: 1px solid white;
                     border-top: none;
                     border-right: none;
                     border-left: none;

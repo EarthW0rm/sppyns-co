@@ -2,6 +2,7 @@ FROM alpine:3.7 AS SystemOS
 RUN apk update \
 	&& apk add --update nodejs nodejs-npm \
     && npm install pm2 -g 
+    && npm install webpack -g 
 EXPOSE 3000
 
 FROM SystemOS AS build
@@ -16,7 +17,7 @@ RUN npm run build
 FROM SystemOS
 WORKDIR /app
 COPY --from=build './app-build/package.json' /app/package.json
-COPY --from=build './app-build/webpack.config.js' /app/webpack.config.js
+# COPY --from=build './app-build/webpack.config.js' /app/webpack.config.js
 COPY --from=build './app-build/node.app.js' /app/node.app.js
 COPY --from=build './app-build/public' /app/public
 RUN npm install --production

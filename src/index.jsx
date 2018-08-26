@@ -1,4 +1,4 @@
-//import 'bootstrap/dist/js/bootstrap';
+import 'bootstrap/dist/js/bootstrap';
 import './sass/main';
 //import 'font-awesome/css/font-awesome.min.css';
 
