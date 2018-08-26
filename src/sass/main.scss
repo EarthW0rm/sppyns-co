@@ -350,11 +350,34 @@ body {
 
                 }
 
+               
+
                 .hight{
                     background-image: url('../images/_background-why-second.jpg');
                     background-position: top right;
-                    padding-left:30px;
                     //min-width: 694px;
+
+                    @media (max-width: 1300px) {
+                        .highlight{
+                            margin-left:auto;
+                            margin-right: auto;
+                        }
+                    }
+    
+                    @media (min-width: 1300px) {
+                        .highlight{
+                            margin: 0px auto;
+                            width: auto;
+                        }
+                    }
+
+                    .holder-block {
+                        background-color: transparent;
+                        max-width: 670px;
+                        width: 100%;
+                        float: right;
+                    }
+
                     
                     .highlight{
 
@@ -364,14 +387,10 @@ body {
                             margin-top: 0px !important;
                         }
                         
-                        min-width: 250px;
+                        min-width: 399px;
                         max-width: 400px;
-                        padding: 0px;
-                        margin: auto 0px;
-                        margin-right: 60px;
-                        margin-top: 10%;
+                        padding: 50px 20px 30px 20px;                        
                         display: block;
-                        float: right;
                         font-family: Oswald;
                         font-weight: 200;
                         color: #999999;
@@ -384,7 +403,7 @@ body {
                             color: $main-bkg-color;
                             font-family: sans-serif; 
                             text-align: justify;
-                            font-size: 0.7rem;
+                            font-size: 1rem;
                         }
 
                     }

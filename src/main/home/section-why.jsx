@@ -17,15 +17,16 @@ export default translate()((props) => {
                         </div>
                     </div>
                     <div className="col hight">
-                        <div className="highlight">
-                            <h2>{t('section.why.top.title')}</h2>
-                            <p>{t('section.why.top.p1')}</p>
-                            <p>{t('section.why.top.p2')}</p>
-                            <h2>{t('section.why.bot.title')}</h2>
-                            <p>{t('section.why.bot.p1')}</p>
-                            <p>{t('section.why.bot.p2')}</p>
-                            <p>{t('section.why.bot.p3')}</p>
-
+                        <div className="holder-block">
+                            <div className="highlight">
+                                <h2>{t('section.why.top.title')}</h2>
+                                <p>{t('section.why.top.p1')}</p>
+                                <p>{t('section.why.top.p2')}</p>
+                                <h2>{t('section.why.bot.title')}</h2>
+                                <p>{t('section.why.bot.p1')}</p>
+                                <p>{t('section.why.bot.p2')}</p>
+                                <p>{t('section.why.bot.p3')}</p>
+                            </div>
                         </div>
                     </div>
                 </div>

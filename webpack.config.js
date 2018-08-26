@@ -7,7 +7,8 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 module.exports = function(env) {
 
     return {
-        entry: './src/index.jsx'
+        mode: 'production'
+        , entry: './src/index.jsx'
         , output:{
             path: __dirname + '/public'
             , filename: './sppyns-co-[hash].js'
