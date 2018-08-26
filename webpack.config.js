@@ -10,7 +10,7 @@ module.exports = function(env) {
         entry: './src/index.jsx'
         , output:{
             path: __dirname + '/public'
-            , filename: './app.js'
+            , filename: './sppyns-co-[hash].js'
         }
         ,devServer:{
             port: 81
@@ -79,15 +79,15 @@ module.exports = function(env) {
                         loader: 'url-loader',
                         options: { 
                             limit: 8000, // Convert images < 8kb to base64 strings
-                            name: 'images/[hash]-[name].[ext]'
+                            name: 'images/sppyns-co-[hash].[ext]'
                         } 
                     }]
                 }
             ]
-        }
+        }        
         , plugins: [
             new ExtractTextPlugin({
-                filename: 'app.css'
+                filename: 'sppyns-co-[hash].css'
                 , allChunks: true
             })
             , new FaviconsWebpackPlugin('./src/images/_company-icon.png')

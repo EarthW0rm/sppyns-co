@@ -3,10 +3,27 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
 var router = express.Router();
-
 var app = express();
+
+var SENDGRID_API_KEY='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'
+var MAIL_TO=''
+
+
+function sendEmail(data) {
+
+    const sgMail = require('@sendgrid/mail');
+    sgMail.setApiKey(SENDGRID_API_KEY);
+    const msg = {
+      to: 'contact@sppyns.io',
+      from: 'contact@sppyns.io',
+      subject: 'Formularios site sppyns-co',
+      text: 'and easy to do anywhere, even with Node.js'
+    };
+    sgMail.send(msg);
+
+
+}
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
@@ -55,4 +72,5 @@ app.set('port', process.env.PORT || 3000);
 
 var server = app.listen(app.get('port'), function () {
     console.log('Express server listening on port ' + server.address().port);
+    //sendEmail();
 });

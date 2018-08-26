@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,700i,800,800i');
-@import url('https://fonts.googleapis.com/css?family=Oswald:200');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,400');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,200');
 
 @import "~bootstrap/scss/functions";
@@ -45,18 +45,26 @@ $main-bkg-color: #1D3C57;
     font-family:'Open Sans' ,Arial, Helvetica, sans-serif;
 }
 
+
 body {
+
+    
 
     %inline_center {
         display: inline-block;
-        margin: 0px auto;
+        text-align: center;
+        width: 100%;
     }
 
     background-color: lighten($main-bkg-color, 3%);
     
     div#app{
+        font-size: 1.064rem;
+        max-width: 1900px;
+        margin: 0px auto;
+        background-color: $main-bkg-color;
+        
         @extend %main-font-config;
-        margin: 0px;
         padding: 0px;
 
         & > div > .container-fluid {
@@ -65,7 +73,6 @@ body {
         }
 
         .navbar {
-            font-size: 14px;
             background-color: $main-bkg-color;
             margin-bottom: 0px;
             padding-top: 20px;
@@ -79,7 +86,6 @@ body {
                 .nav-item {
                     font-family: Oswald;
                     font-weight: 200;
-                    font-size: 17px;
                     a {
                         color: white;
                     }
@@ -89,19 +95,24 @@ body {
             .nav-item {
                 font-family: Oswald;
                 font-weight: 200;
-                font-size: 17px;
+                //font-size: 17px;
                 a {
                     color: white;
                     white-space: nowrap;
                 }
             }
 
+            .login a.sign-up {
+                font-size: 1rem;
+            }
+
+
             .navbar-header {
 
                 & .navbar-brand {
                     @extend %main-font-config;
                     color: white;
-                    font-size: 30px;
+                    //font-size: 30px;
                     font-weight: 600;
                     
                     & .fa{
@@ -116,7 +127,7 @@ body {
 
                 & > li {                    
                     margin-right: 10px;
-                    font-size: 20px;
+                    //font-size: 20px;
                     font-weight: bolder;
     
                     a {
@@ -141,20 +152,20 @@ body {
                 padding-bottom: 90px;
 
                 .title-box {
-                    max-width: 550px;
+                    max-width: 530px;
                     margin: 0px auto;
                     text-align: center;
 
                     hr.separator {
                         height: 2px;
                         background-color: white;
-                        margin: 45px 0px 45px 0px;
+                        margin: 30px 0px 40px 0px;
                     }
     
                     .title {
                         font-family: Raleway;
                         font-weight: 400;
-                        font-size: 124px;
+                        font-size: 8.2rem;
                         @extend %inline_center;
                         line-height: 95px;
                     }
@@ -162,14 +173,14 @@ body {
                     .sub-title {
                         font-family: Raleway;
                         font-weight: 200;
-                        font-size: 68px;
+                        font-size: 4.4rem;
                         @extend %inline_center;
                         line-height: normal;
                     }
 
                     .description{
-                        text-align: left;
-                        font-size: 15px;
+                        text-align: justify;
+                        font-size: 0.9rem;
                         padding: 0px 10px;
                         @extend %main-font-config;
                         
@@ -219,6 +230,7 @@ body {
                     h2 {
                         font-family: Oswald;
                         font-weight: 200;
+                        font-size: 1.5rem;
                         text-align: center;
                         min-width: 180px;
                         min-height: 108px;
@@ -233,7 +245,7 @@ body {
 
                     p {
                         text-align: center;
-                        font-size: 12px;
+                        font-size: 0.9rem;
                         padding: 0px 10px;
                         @extend %main-font-config;
                     }
@@ -244,7 +256,7 @@ body {
 
                     .ico{
                         text-align: center;
-                        font-size: 70px;
+                        font-size: 7rem;
                     }
 
                 }
@@ -252,5 +264,72 @@ body {
             }
 
         }
+
+        .section-why {
+
+            .row {
+                margin: 0px 0px 0px 0px;
+            }
+
+            .row.line {
+                
+
+                .col {
+                    margin: 0px;
+                    padding: 0px;
+                }
+
+                & > .col-5,
+                & > .col {
+                    margin: 0px;
+                    padding: 0px;
+                }
+
+                .why {
+                    width: 40%;
+                    min-width: 460px;
+                    color: white;
+
+                    .jumbo {
+                        border-radius: 0px;
+                        max-width: 460px;
+                        margin: 0px auto;
+                        padding: 60px 20px 60px 20px;
+
+                        .title{
+                            text-align: center;
+                            font-family: Oswald;
+                            font-weight: 200;
+                            font-size: 6.5rem;
+                            color: #BEC0C1;
+                            display: inline-block;
+                        }
+
+                        .sub-title{
+                            text-align: center;
+                            font-family: Oswald;
+                            font-weight: 200;
+                            font-size: 7.5rem;
+                            color: white;
+                            display: inline-block;
+                            margin-top: -55px;
+                        }
+
+                        p {
+                            text-align: justify;
+                            font-size: 0.9rem;
+                        }
+                    }
+
+                }
+
+                .hight{
+                    background-image: url('../images/_background-why.jpg');
+                    background-position-x: -200px;
+                }
+            }
+
+        }
+
     }
 }

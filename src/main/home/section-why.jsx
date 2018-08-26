@@ -5,18 +5,18 @@ import { translate } from 'react-i18next';
 export default translate()((props) => {
     const { t, tReady } = props;
     return (
-        <section className="section-team" id="section-why">
+        <section className="section-why" id="section-why">
             <div>
-                <div className="row">
-                    <div className="col">
-                        <div className="jumbotron">
-                            <h1 className="jumbotron--title">{t('section.why.title')}</h1>
-                            <p className="jumbotron-sub-title">{t('section.why.subtitle')}</p>
+                <div className="row line">
+                    <div className="why">
+                        <div className="jumbo">
+                            <span className="title">{t('section.why.title')}</span>
+                            <span className="sub-title">{t('section.why.subtitle')}</span>
                             <hr className="separator" />
                             <p>{t('section.why.jumbo.p')}</p>
                         </div>
                     </div>
-                    <div className="col">
+                    <div className="col hight">
                         <div className="row">
                             <h2>{t('section.why.top.title')}</h2>
                             <p>{t('section.why.top.p1')}</p>

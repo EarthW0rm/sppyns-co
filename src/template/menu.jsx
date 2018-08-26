@@ -49,7 +49,7 @@ export default translate()((props) => {
                             <a className="nav-link" onClick={() => {i18n.changeLanguage("fr-FR")} }>FR</a>
                         </li>
                         <li className="nav-item login">
-                            <a className="nav-link" href={t('home.link.login')} >Sign-Up/Login</a>
+                            <a className="nav-link sign-up" href={t('home.link.login')} >Sign-Up/Login</a>
                         </li>
                     </ul>
                 </div>
