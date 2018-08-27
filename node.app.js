@@ -39,7 +39,7 @@ app.use(function(req, res, next) {
     next();
 });
 
-router.get('/', function (req, res) {
+router.get('*', function (req, res) {
     res.status(200).render(path.join(__dirname, 'public', '/index.html'));
 });
 
@@ -55,7 +55,7 @@ router.post('/sendEmail', function (req, res) {
 } )
 
 
-app.use('/', router);
+app.use('*', router);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
