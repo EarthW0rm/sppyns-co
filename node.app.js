@@ -39,9 +39,6 @@ app.use(function(req, res, next) {
     next();
 });
 
-router.get('*', function (req, res) {
-    res.status(200).render(path.join(__dirname, 'public', '/index.html'));
-});
 
 router.post('/sendEmail', function (req, res) {
 
@@ -49,13 +46,13 @@ router.post('/sendEmail', function (req, res) {
         console.log(data);
         res.status(200).send({status: 'success'})
     })
-
-    
-
 } )
 
 
-app.use('*', router);
+router.get('*', function (req, res) {
+    res.status(200).render(path.join(__dirname, 'public', '/index.html'));
+});
+app.use('/', router);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
