@@ -80,9 +80,17 @@ app.use(function (err, req, res, next) {
     });
 });
 
-app.set('port', process.env.PORT || 3000);
 
-var server = app.listen(app.get('port'), function () {
-    console.log('Express server listening on port ' + server.address().port);
-    //sendEmail();
-});
+
+if(!process.env.IS_FUNCTION){
+    app.set('port', process.env.PORT || 3000);
+
+    var server = app.listen(app.get('port'), function () {
+        console.log('Express server listening on port ' + server.address().port);
+        //sendEmail();
+    });
+} else {
+    const functions = require('firebase-functions');
+    exports.sppyns = functions.https.onRequest(app);
+}
+
