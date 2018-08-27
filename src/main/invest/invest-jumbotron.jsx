@@ -7,7 +7,7 @@ export default translate()((props) => {
     return (
         <div className="invest-jumbotron">
         
-            <div className="jumbotron">
+            <div className="jumbo">
                 <div className="title-box">
                     <div className="titles">
                         <h1 className="sub-title">{t('invest.jumbo.title')}</h1>

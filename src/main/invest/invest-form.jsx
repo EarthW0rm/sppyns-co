@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, ButtonGroup } from 'reactstrap';
 import { translate } from 'react-i18next';
+import axios from 'axios'
 class InvestForm extends Component {
 
     constructor(props) {

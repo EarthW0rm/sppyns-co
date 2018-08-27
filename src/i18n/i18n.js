@@ -18,7 +18,7 @@ i18n
                     , 'home.section.contact.endereco': 'Address:'
                     , 'home.section.contact.endereco.valor': 'Tartu maakond, Tartu linn Riia tn 128, 50411, Estônia'
                     , 'home.section.contact.email': 'E-mail:'
-                    , 'home.section.contact.email.valor': 'atendimento@sppyns.co'
+                    , 'home.section.contact.email.valor': 'contact@sppyns.io'
                     , 'home.section.contact.tel': 'Phone Number:'
                     , 'home.section.contact.tel.valor': '+55 11 9 8339-8994'
 
@@ -126,7 +126,7 @@ i18n
                     , 'home.section.contact.endereco': 'Adresse de rue:'
                     , 'home.section.contact.endereco.valor': 'Tartu maakond, Tartu linn Riia tn 128, 50411, Estônia'
                     , 'home.section.contact.email': 'Votre adresse e-mail:'
-                    , 'home.section.contact.email.valor': 'atendimento@sppyns.co'
+                    , 'home.section.contact.email.valor': 'contact@sppyns.io'
                     , 'home.section.contact.tel': 'Téléphone:'
                     , 'home.section.contact.tel.valor': '+55 11 9 8339-8994'
 
@@ -228,11 +228,11 @@ i18n
                     , 'home.link.signup': 'https://login.microsoftonline.com/isppyns.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1_Customer1_SigUp&client_id=27cb68f8-28cd-4dee-a5de-7645afeba0df&nonce=defaultNonce&redirect_uri=https%3A%2F%2Fwww.sppyns.co&scope=openid&response_type=id_token&prompt=login&ui_locales=pt-BR'
                     , 'home.link.login': 'https://login.microsoftonline.com/isppyns.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1_Customer1_SigUpOrSigIn&client_id=27cb68f8-28cd-4dee-a5de-7645afeba0df&nonce=defaultNonce&redirect_uri=https%3A%2F%2Fwww.sppyns.co&scope=openid&response_type=id_token&prompt=login&ui_locales=pt-BR'
 
-                    , 'home.section.contact.fale': 'Fale coma gente'
+                    , 'home.section.contact.fale': 'Fale com a gente'
                     , 'home.section.contact.endereco': 'Endereço:'
                     , 'home.section.contact.endereco.valor': 'Tartu maakond, Tartu linn Riia tn 128, 50411, Estônia'
                     , 'home.section.contact.email': 'E-mail:'
-                    , 'home.section.contact.email.valor': 'atendimento@sppyns.co'
+                    , 'home.section.contact.email.valor': 'contact@sppyns.io'
                     , 'home.section.contact.tel': 'Telefone:'
                     , 'home.section.contact.tel.valor': '+55 11 9 8339-8994'
 

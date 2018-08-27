@@ -8,6 +8,8 @@ import SectionTeam from './section-team';
 import SectionWhy from './section-why';
 import SectionInvest from '../invest/invest';
 
+import i18n from 'i18next';
+
 export default props => (
     <div className="container-fluid">
         <SectionJumbotron />
@@ -20,9 +22,9 @@ export default props => (
         <section id="section-footer" className="section-footer">
             <div className="container">
                 <div className="social">
-                    <a href="#section-footer"><i className="fab fa-facebook-square"></i></a>
-                    <a href="#section-footer"><i className="fab fa-twitter-square"></i></a>
-                    <a href="#section-footer"><i className="fab fa-google-plus-square"></i></a>
+                    <a onClick={() => {i18n.changeLanguage("pt-BR")} }>PT</a>
+                    <a onClick={() => {i18n.changeLanguage("en-US")} }>EN</a>
+                    <a onClick={() => {i18n.changeLanguage("fr-FR")} }>FR</a>
                 </div>
                 <span>
                     © 2018 by SPPYNS. No Geek? No problem!

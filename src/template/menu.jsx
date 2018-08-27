@@ -26,11 +26,11 @@ export default translate()((props) => {
                             <AnchorLink className="nav-link" href="#section-products">{t('header.menu.oque')}</AnchorLink>
                         </li>
                         <li className="nav-item">
-                            <AnchorLink className="nav-link" href="#section-team">{t('header.menu.quem')}</AnchorLink>
-                        </li>
-                        <li className="nav-item">
                             <AnchorLink className="nav-link" href="#section-why">{t('header.menu.porque')}</AnchorLink>
                         </li>
+                        <li className="nav-item">
+                            <AnchorLink className="nav-link" href="#section-history">{t('header.menu.quem')}</AnchorLink>
+                        </li>                        
                         <li className="nav-item">
                             <AnchorLink className="nav-link" href="#section-invest">{t('header.menu.invista')}</AnchorLink>
                         </li>
@@ -39,15 +39,6 @@ export default translate()((props) => {
                         </li>                        
                     </ul>
                     <ul className="navbar-nav ml-auto">
-                        <li className="nav-item">
-                            <a className="nav-link" onClick={() => {i18n.changeLanguage("pt-BR")} }>PT</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" onClick={() => {i18n.changeLanguage("en-US")} }>EN</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" onClick={() => {i18n.changeLanguage("fr-FR")} }>FR</a>
-                        </li>
                         <li className="nav-item login">
                             <a className="nav-link sign-up" href={t('home.link.login')} >Sign-Up/Login</a>
                         </li>
