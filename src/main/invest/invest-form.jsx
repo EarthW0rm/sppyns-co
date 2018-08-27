@@ -23,12 +23,38 @@ class InvestForm extends Component {
     }
 
     SendForm() {
+
+        const { t, tReady } = this.props;
+
+
         var data = {...this.state}
         data.Formualario = 'CONTATO'
 
+        if(!data.email || !data.nome || !data.telefone || !data.documento){
+            window.alert(t('vld.a'));
+            return;
+        }
+
         axios.post('/sendEmail', data)
-          .then(function (response) {
-            window.alert('Formulário enviado.');
+          .then((response) => {
+            window.alert(t('vld.b'));
+            this.setState({
+                selectedQuota: 1
+                , nome: ''
+                , email: ''
+                , telefone: ''
+                , documento: ''
+                , endereco: ''
+                , complemento: ''
+                , cidade: ''
+                , estado: ''
+                , cep: ''
+                , pais: ''
+            })
+          })
+          .catch((error) => {
+            console.log(error.message);
+            
             this.setState({
                 selectedQuota: 0
                 , nome: ''
@@ -42,9 +68,8 @@ class InvestForm extends Component {
                 , cep: ''
                 , pais: ''
             })
-          })
-          .catch(function (error) {
-            console.log(error);
+
+            window.alert(t('vld.c'));
           });
     }
 

@@ -110,6 +110,11 @@ i18n
                     , 'header.menu.porque': 'Why Sppyns?'
                     , 'header.menu.contato': 'Contact'
                     , 'header.menu.invista': 'Invest'
+
+                    , 'vld.a': 'Fill in the information, (Email, Name, Phone, Document) before sending.'
+                    , 'vld.b': 'Data sent successfully.'
+                    , 'vld.c': 'Error sending your data.'
+                    , 'vld.d': 'Fill in the information before sending.'
                 }
             },
             "fr-FR": {
@@ -216,6 +221,11 @@ i18n
                     , 'header.menu.porque': 'Pourquoi Sppyns?'
                     , 'header.menu.contato': 'Contactez nous'
                     , 'header.menu.invista': 'Investissez'
+
+                    , 'vld.a': 'Remplissez les informations (Email, Nom, Téléphone, Document) avant de les envoyer.'
+                    , 'vld.b': 'Données envoyées avec succès.'
+                    , 'vld.c': 'Erreur lors de l`envoi de vos données.'
+                    , 'vld.d': 'Remplissez les informations avant l`envoi.'
 
                 }
             },
@@ -325,7 +335,10 @@ i18n
                     , 'header.menu.contato': 'Contato'
                     , 'header.menu.invista': 'Invista'
 
-                    
+                    , 'vld.a': 'Preencha as informações, (Email, Nome, Telefone, Documento) antes de enviar.'
+                    , 'vld.b': 'Dados enviado com sucesso.'
+                    , 'vld.c': 'Erro ao enviar os seus dados.'
+                    , 'vld.d': 'Preencha as informações antes de enviar.'
 
                 }
             }

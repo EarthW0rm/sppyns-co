@@ -24,12 +24,19 @@ class SectionContact extends Component {
     }
 
     SendForm() {
+        const { t, tReady } = this.props;
+
         var data = {...this.state}
         data.Formualario = 'CONTATO'
 
+        if(!data.email || !data.nome || !data.assunto || !data.mensagem){
+            window.alert(t('vld.d'));
+            return;
+        }
+
         axios.post('/sendEmail', data)
-          .then(function (response) {
-            window.alert('Formulário enviado.');
+          .then((response) => {
+            window.alert(t('vld.b'));
             this.setState({
                 nome: ''
                 , email: ''
@@ -37,8 +44,16 @@ class SectionContact extends Component {
                 , mensagem: ''
             })
           })
-          .catch(function (error) {
-            console.log(error);
+          .catch((error) => {
+            console.log(error.message);
+            this.setState({
+                nome: ''
+                , email: ''
+                , assunto: ''
+                , mensagem: ''
+            })
+
+            window.alert(t('vld.c'));
           });
     }
 
